@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="pcd2pgm" type="pcd2topic" name="demo_pcl2map" output="screen">
+        <!-- <remap from="/mapping_ant01/global_pcl" to="$(arg thenameofcloudIn)"/> -->
+    </node>
+
+    <node pkg="rviz" type="rviz" name="rviz"/>
+    <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find pkg)/xx/xx/xx.rviz"/> -->
+
+</launch>
